@@ -1,0 +1,51 @@
+{
+  "name": "vrm-toolkit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets agents inspect, validate and preview VRM / VRMA files. / VRM・VRMAファイルの検品・情報抽出・プレビューをエージェントから使えるようにするMCPサーバー。",
+  "type": "module",
+  "license": "MIT",
+  "author": "WD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwarehouse1/vrm-toolkit-mcp.git"
+  },
+  "homepage": "https://github.com/dwarehouse1/vrm-toolkit-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "vrm",
+    "vrma",
+    "three-vrm",
+    "validation",
+    "3d"
+  ],
+  "bin": {
+    "vrm-toolkit-mcp": "dist/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/build-renderer.mjs",
+    "test": "npm run build && node --import tsx --test test/glb.test.ts test/inspect.test.ts test/validate.test.ts test/vrma.test.ts test/boundary.test.ts test/render.test.ts",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@pixiv/three-vrm": "3.5.2",
+    "@pixiv/three-vrm-animation": "3.5.2",
+    "puppeteer-core": "24.23.0",
+    "three": "0.184.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/three": "0.180.0",
+    "esbuild": "0.25.10",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  }
+}

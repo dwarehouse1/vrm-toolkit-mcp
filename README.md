@@ -1,7 +1,6 @@
 # vrm-toolkit-mcp
 
-**Status: v0.1.0 (pre-release). Source on GitHub; not yet published to npm. /
-v0.1.0(プレリリース)。ソースはGitHub公開済み・npm未公開。**
+**v0.1.0 — [npm](https://www.npmjs.com/package/vrm-toolkit-mcp) / [GitHub](https://github.com/dwarehouse1/vrm-toolkit-mcp)**
 
 An MCP (Model Context Protocol) server that lets an AI agent inspect, validate and preview
 VRM / VRMA files on your machine. Five tools, stdio transport, no network access at runtime.
@@ -38,18 +37,21 @@ VRMA (`extensions.VRMC_vrm_animation`), GLB container or plain glTF JSON.
 
 ## Setup / セットアップ
 
-```bash
-npm install
-npm run build
-```
-
 Register with Claude Code / Claude Codeへの登録:
 
 ```bash
-claude mcp add vrm-toolkit -- node /absolute/path/to/vrm-toolkit/dist/main.js
+claude mcp add vrm-toolkit -- npx -y vrm-toolkit-mcp
 ```
 
-Verified locally: `claude mcp list` reports `vrm-toolkit: ... - ✔ Connected`.
+Other MCP hosts / その他のMCPホスト: command `npx`, args `["-y", "vrm-toolkit-mcp"]` (stdio).
+
+From source / ソースから:
+
+```bash
+npm install
+npm run build
+claude mcp add vrm-toolkit -- node /absolute/path/to/vrm-toolkit/dist/main.js
+```
 
 ## Execution examples / 実行例
 

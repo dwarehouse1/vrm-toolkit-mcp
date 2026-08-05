@@ -1,6 +1,7 @@
 {
   "name": "vrm-toolkit-mcp",
-  "version": "0.1.0",
+  "mcpName": "io.github.dwarehouse1/vrm-toolkit-mcp",
+  "version": "0.1.1",
   "description": "MCP server that lets agents inspect, validate and preview VRM / VRMA files. / VRM・VRMAファイルの検品・情報抽出・プレビューをエージェントから使えるようにするMCPサーバー。",
   "type": "module",
   "license": "MIT",

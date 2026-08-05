@@ -1,6 +1,6 @@
 # vrm-toolkit-mcp
 
-**v0.1.0 — [npm](https://www.npmjs.com/package/vrm-toolkit-mcp) / [GitHub](https://github.com/dwarehouse1/vrm-toolkit-mcp)**
+**v0.1.1 — [npm](https://www.npmjs.com/package/vrm-toolkit-mcp) / [GitHub](https://github.com/dwarehouse1/vrm-toolkit-mcp)**
 
 An MCP (Model Context Protocol) server that lets an AI agent inspect, validate and preview
 VRM / VRMA files on your machine. Five tools, stdio transport, no network access at runtime.

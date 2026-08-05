@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.dwarehouse1/vrm-toolkit-mcp",
+  "description": "Inspect, validate and preview VRM / VRMA files from an AI agent (5 tools, local stdio server).",
+  "repository": {
+    "url": "https://github.com/dwarehouse1/vrm-toolkit-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "vrm-toolkit-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VRM_TOOLKIT_CHROME",
+          "description": "Optional path to a Chromium-based browser executable for the rendering tools",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

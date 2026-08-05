@@ -1,7 +1,7 @@
 # vrm-toolkit-mcp
 
-**Status: pre-release local draft. Not yet published to GitHub/npm. /
-公開前のローカルドラフトです。GitHub/npm未公開。**
+**Status: v0.1.0 (pre-release). Source on GitHub; not yet published to npm. /
+v0.1.0(プレリリース)。ソースはGitHub公開済み・npm未公開。**
 
 An MCP (Model Context Protocol) server that lets an AI agent inspect, validate and preview
 VRM / VRMA files on your machine. Five tools, stdio transport, no network access at runtime.
